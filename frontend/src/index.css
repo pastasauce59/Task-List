@@ -1,0 +1,20 @@
+/* Task list container */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center tasks horizontally */
+  justify-content: center; /* Center tasks vertically */
+  background-color: #0074D9; /* Ocean blue */
+  color: #FFD700; /* Tan (sand) */
+  height: 100vh; /* Full viewport height */
+}
+
+/* Individual task item */
+.task-item {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #FFD700; /* Tan border */
+  border-radius: 5px;
+  background-color: #FFFFFF; /* White */
+}
+
