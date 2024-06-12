@@ -1,10 +1,16 @@
 import React from 'react';
+import {BiEditAlt} from "react-icons/bi"
+import {BsTrash} from "react-icons/bs"
 
-function List(props) {
+function List({id, task,}) {
     return (
-        <div className='task-item'>
-            Here's the list.
-        </div>
+        <li className='task-item'>
+            {task}
+            <div>
+                <BiEditAlt className='icon' />
+                <BsTrash className='icon' />
+            </div>
+        </li>
     );
 }
 

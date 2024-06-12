@@ -18,7 +18,7 @@ function App(props) {
       </button>
 
       <ul className='task-list'>
-        <List />
+        <List task={"Something task example."} />
       </ul>
 
     </div>
