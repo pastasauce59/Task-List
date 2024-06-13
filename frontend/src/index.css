@@ -3,31 +3,54 @@
   background-color: blanchedalmond;
 }
 
+input[type="text"] {
+  width: 300px;
+  height:25px;
+}
+
 /* Task list container */
 .task-list {
   display: flex;
-  flex-direction: column;
-  align-items: center; /* Center tasks horizontally */
+  flex-direction:column;
+  align-items:center; /* Center tasks horizontally */
   justify-content: center; /* Center tasks vertically */
-  background-color: #0074D9; /* Ocean blue */
-  color: #FFD700; /* Tan (sand) */
-  height: 100vh; /* Full viewport height */
+  background-color: #77befc; /* Ocean blue */
+  color: #b39a1e; /* Tan (sand) */
+  height: auto; /* Full viewport height */
+  overflow-y: auto;
+
 }
 
 /* Individual task item */
 .task-item {
-  margin: 10px;
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 20px; /* Increased padding for better touch/click targets */
   border: 1px solid #FFD700; /* Tan border */
   border-radius: 5px;
-  background-color: #FFFFFF; /* White */
+  background-color: #ffffff99; /* White */
+  width: 300px; /* Set a fixed width */
+  /* Allow height to adjust based on content */
+  overflow:auto; /* Hide overflowing content */
+  white-space: normal; /* Allow text to wrap */
 }
 
 .icon {
   cursor: pointer;
   color: darkgray;
+  width: 25px;
+  height: 25px;
+  /* margin: 5px; */
 }
 
 .icon:hover {
-  color: red;
+  color: rgb(121, 44, 44);
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Optional: Add margin or padding for spacing */
 }
